@@ -1,0 +1,63 @@
+[{
+  "name": "flare",
+  "children": [
+    {
+      "name": "analytics",
+      "children": [
+        {
+          "name": "cluster",
+          "children": [
+            {
+              "name": "AgglomerativeCluster",
+              "size": 3938
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "analytics1",
+      "children": [
+        {
+          "name": "cluster1",
+          "children": [
+            {
+              "name": "AgglomerativeCluster1",
+              "size": 3938
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},{
+  "name": "flare1",
+  "children": [
+    {
+      "name": "analytics",
+      "children": [
+        {
+          "name": "cluster",
+          "children": [
+            {
+              "name": "AgglomerativeCluster",
+              "size": 3938
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "analytics1",
+      "children": [
+        {
+          "name": "cluster1",
+          "children": [
+            {
+              "name": "AgglomerativeCluster1",
+              "size": 3938
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]

@@ -1,0 +1,78 @@
+<!-- <blank-card id="my-card">
+
+
+</blank-card> -->
+<!-- <link rel="import" href="../bower_components/px-tabs-master/px-tab.html">
+<link rel="import" href="../bower_components/px-tabs-master/px-tab-set.html">
+<link rel="import" href="../bower_components/px-tabs-master/px-tab-pages.html">
+<link rel="import" href="../bower_components/iron-autogrow-textarea/iron-autogrow-textarea.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<px-card>
+<px-tab-set selected="0">
+    <px-tab>Tab 1</px-tab>
+    <px-tab>Tab 2</px-tab>
+    <px-tab>Tab 3</px-tab>
+</px-tab-set>
+<px-tab-pages selected="0">
+    <section>Tab 1 content</section>
+    <section>Tab 2 content</section>
+    <section>Tab 3 content</section>
+</px-tab-pages>
+</px-card> -->
+<link rel="import" href="../bower_components/px-chart/px-chart.html">
+<link rel="import" href="../bower_components/px-chart/px-chart-series-histogram.html">
+<link rel="import" href="../bower_components/px-chart/px-chart-series-line.html">
+<link rel="import" href="../bower_components/px-chart/px-chart-series-bar.html">
+<link rel="import" href="../bower_components/px-chart/px-chart-series-scatter.html">
+<px-card>
+<div class="pull-left" style="width:50%;">
+<px-chart>
+  <px-chart-series-histogram  width="450px" id="my-histogram-chart" name="Histogram Chart" data="{{chartData}}">
+  </px-chart-series-histogram>
+</px-chart>
+</div>
+<div style="width:50%;float: right;">
+<px-chart>
+  <px-chart-series-line width="450px" id="my-line-chart" name="Line Chart" data="{{chartData}}">
+  </px-chart-series-line>
+</px-chart>
+</div>
+<div class="pull-left" style="width:50%;">
+<px-chart>
+  <px-chart-series-bar width="450px" id="my-bar-chart" name="Bar Chart" data="{{chartData}}">
+  </px-chart-series-bar>
+</px-chart>
+</div>
+<div style="width:50%;float: right;">
+<px-chart>
+  <px-chart-series-scatter width="450px" id="my-scatter-chart" name="Scatter Chart" data="{{chartData}}">
+  </px-chart-series-scatter>
+</px-chart>
+</div>
+<!-- <google-chart type='bar' data='[["Month", "Days"], ["Jan", 31], ["Feb", 28], ["Mar", 31]]'></google-chart> -->
+<!-- <google-chart type='histogram' data='[["Quarks", "Leptons", "Gauge Bosons", "Scalar Bosons"],
+    [2/3, -1, 0, 0],
+    [2/3, -1, 0, null],
+    [2/3, -1, 0, null],
+    [-1/3, 0, 1, null],
+    [-1/3, 0, -1, null],
+    [-1/3, 0, null, null],
+    [-1/3, 0, null, null]]'></google-chart> -->
+    
+  <!-- <div id="histogram"></div>   -->
+</px-card>
+
+<style>
+/* body {
+    font: 10px sans-serif;
+} */
+.bar {
+    shape-rendering: crispEdges;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+</style>

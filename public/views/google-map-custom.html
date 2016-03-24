@@ -1,0 +1,31 @@
+<style>
+  google-map {
+    height: 400px;
+  }
+</style>
+
+<dom-module is="google-map-custom">
+  <template>
+<google-map latitude="17.308688" longitude="78.497314" zoom="6" disable-default-ui fit-to-markers>
+<template is="dom-repeat" items="{{marker-list}}" as="marker">
+  <google-map-marker latitude="{{marker.latitude}}" longitude="{{marker.longitude}}"
+      title="{{marker.title}}" draggable="true">
+      <h4>{{marker.name}}</h4>
+        <span>{{marker.address}}</span>
+      </google-map-marker>
+      </template>
+</google-map>
+</template>
+</dom-module>
+
+<script type="text/javascript">
+    Polymer({
+      is: 'google-map-custom',
+      properties:{
+        "marker-list":{
+        	type: Array
+        }
+      }
+    });
+
+</script>

@@ -1,0 +1,49 @@
+
+<px-card class="pull-left upload-header-s1" style="width:666px;">
+	<paper-input label="Price LIst Name:" id="aadd"></paper-input>
+	<div class="pull-left w100p mb20">
+		<lable class="pull-left">Upload File:</lable>
+		<input type="file" class="pull-left ml10" />
+		<lable class="pull-right">Replace</lable>
+		<input type="checkbox" class="pull-right" />
+	</div>
+	<div class="pull-left w100p">
+		<a href="#" class="btn pull-right ml10">Submit</a>
+		<a href="#" class="btn pull-right ml10">Reset</a>
+	</div>
+	
+</px-card>
+
+<px-card header-text="Chat Box" style="width:300px;float: right;">
+	<paper-custom-tab last-month-array="{{lastMonthChatArr}}" last-week-array="{{lastWeekChatArr}}"></paper-custom-tab>
+</px-card>
+
+<px-card class="pull-left" style="width:666px;">
+	
+<!-- <paper-dropdown-menu label="Dinosaurs" noink no-animations>
+  <paper-listbox class="dropdown-content">
+    <paper-item>allosaurus</paper-item>
+    <paper-item>brontosaurus</paper-item>
+    <paper-item>carcharodontosaurus</paper-item>
+    <paper-item>diplodocus</paper-item>
+  </paper-listbox>
+</paper-dropdown-menu> -->
+
+<div class="pull-left w100p">
+	<select class="style-scope pull-left addnewprojectsd-card mt30"><option class="style-scope addnewprojectsd-card">AL</option><option class="style-scope addnewprojectsd-card">AK</option><option class="style-scope addnewprojectsd-card">GA</option><option class="style-scope addnewprojectsd-card">GA</option><option class="style-scope addnewprojectsd-card">ID</option></select>
+	<paper-button class="pull-left ml10 mt20"><iron-icon icon="plus"></iron-icon>Add</paper-button>
+	<paper-button class="pull-left ml10 mt20"><iron-icon icon="close"></iron-icon>Reset</paper-button>
+	<paper-input label="Price LIst Name:" class="pull-right ml10" id="aadd"></paper-input>
+	<iron-icon class="pull-right" icon="search"></iron-icon>
+</div>
+
+<div class="pull-left w100p">
+	<px-data-table table-data="{{data}}"></px-data-table>
+</div>
+
+<paper-button class="pull-right custom green ml10 mt20" raised>Save</paper-button>
+<paper-button class="pull-right ml10 mt20" raised>Cancel</paper-button>
+
+</px-card>
+
+

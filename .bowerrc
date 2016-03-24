@@ -1,0 +1,7 @@
+{
+  "directory": "public/bower_components",
+  "registry": "http://bower.herokuapp.com",
+   "proxy":"http://hm346563:fisgloobal9(@3.28.29.241:88",
+  "https-proxy":"http://hm346563:fisgloobal9(@3.28.29.241:88"
+
+}

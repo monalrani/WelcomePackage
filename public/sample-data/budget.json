@@ -1,0 +1,546 @@
+{
+    "name": "Orders",
+    "appropriation14": 2400,
+    "appropriation13": 6948363588,
+    "appropriation12": 6433088405,
+    "appropriation11": 6948363588,
+    "appropriation10": 6433088405,
+    "appropriation09": 7192763489,
+    "children": [
+        {
+            "name": "2016",
+            "appropriation14": 600,
+            "appropriation13": 8,
+            "appropriation12": 7,
+            "appropriation11": 6948363588,
+            "appropriation10": 6433088405,
+            "appropriation09": 7,
+            "annotation": "Health care expenditures account for 19% of legislative appropriations. The biggest portion finances the state’s share of Medicaid spending for poor and disabled Oklahomans. The federal government also contributes to these programs.",
+            "children": [
+                {
+                    "name": "Q1-16",
+                    "appropriation14": 300,
+                    "appropriation13": 8,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 75028113,
+                    "appropriation12": 7,
+                    "annotation": "There is a proposed a 1% funding increase for the Department of Health, which oversees community clinics and programs throughout the state. The new funds would be used to expand programs targeting Oklahoma’s high infant mortality death rate.",
+                     "children": [
+                        {
+                            "name": "Jan'16",
+                            "appropriation14": 150,
+                            "appropriation13": 5,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 4,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Feb'16",
+                        "appropriation14" : 150,
+                        "appropriation13" : 3,
+                        "appropriation12": 3,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2015",
+            "appropriation14": 1200,
+            "appropriation13": 34,
+            "appropriation12": 45,
+            "appropriation11": 6948363588,
+            "appropriation10": 6433088405,
+            "appropriation09": 1126729503,
+            "annotation": "Health care expenditures account for 19% of legislative appropriations. The biggest portion finances the state’s share of Medicaid spending for poor and disabled Oklahomans. The federal government also contributes to these programs.",
+            "children": [
+                {
+                    "name": "Q1-15",
+                    "appropriation14": 300,
+                    "appropriation13": 9,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 75028113,
+                    "appropriation12": 8,
+                    "annotation": "There is a proposed a 1% funding increase for the Department of Health, which oversees community clinics and programs throughout the state. The new funds would be used to expand programs targeting Oklahoma’s high infant mortality death rate.",
+                     "children": [{
+                            "name": "Jan'15",
+                            "appropriation14": 100,
+                            "appropriation13": 2,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 2,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Feb'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 4,
+                        "appropriation12": 4,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Mar'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 3,
+                        "appropriation12": 2,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q2-15",
+                    "appropriation14": 300,
+                    "appropriation13": 8,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 842122261,
+                    "appropriation12": 9,
+                    "annotation": "OCHA oversees the SoonerCare program, which dispenses federal and state Medicaid funds to serve qualified poor and disabled Oklahomans.  It receives 14% of total state appropriations. There is a proposed 4.3% funding increase for 2014, much of which would be used to cover the cost of new enrollments resulting from implementation of the federal government’s Medicaid expansion.",
+                     "children": [{
+                            "name": "Apr'15",
+                            "appropriation14": 100,
+                            "appropriation13": 3,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 5,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "May'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 1,
+                        "appropriation12": 2,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Jun'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 4,
+                        "appropriation12": 2,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q3-15",
+                    "appropriation14": 300,
+                    "appropriation13": 10,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 209579129,
+                    "appropriation12": 12,
+                    "annotation": "The Department of Mental Health would receive one of the largest percentage increases—5.9%—of all major state agencies under the proposed 2014 budget. The additional money would be used to open new mental health crisis centers and provide more services for troubled children, prescription drug abusers and people at risk of suicide. The department currently receives 5% of all state appropriations.",
+                     "children": [{
+                            "name": "Jul'15",
+                            "appropriation14": 100,
+                            "appropriation13": 4,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 4,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Aug'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 4,
+                        "appropriation12": 5,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Sep'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 2,
+                        "appropriation12": 3,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q4-15",
+                    "appropriation14": 300,
+                    "appropriation13": 8,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 842122261,
+                    "appropriation12": 16,
+                    "annotation": "OCHA oversees the SoonerCare program, which dispenses federal and state Medicaid funds to serve qualified poor and disabled Oklahomans.  It receives 14% of total state appropriations. There is a proposed 4.3% funding increase for 2014, much of which would be used to cover the cost of new enrollments resulting from implementation of the federal government’s Medicaid expansion.",
+                     "children": [{
+                            "name": "Oct'15",
+                            "appropriation14": 100,
+                            "appropriation13": 4,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 4,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Nov'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 3,
+                        "appropriation12": 5,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Dec'15",
+                        "appropriation14" : 100,
+                        "appropriation13" : 1,
+                        "appropriation12": 7,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                }
+            ]
+        },
+        {
+            "name": "2014",
+            "appropriation14": 1200,
+            "appropriation13": 50,
+            "appropriation12": 47,
+            "appropriation11": 6948363588,
+            "appropriation10": 6433088405,
+            "appropriation09": 1126729503,
+            "annotation": "Health care expenditures account for 19% of legislative appropriations. The biggest portion finances the state’s share of Medicaid spending for poor and disabled Oklahomans. The federal government also contributes to these programs.",
+            "children": [
+                {
+                    "name": "Q1-14",
+                    "appropriation14": 300,
+                    "appropriation13": 18,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 75028113,
+                    "appropriation12": 12,
+                    "annotation": "There is a proposed a 1% funding increase for the Department of Health, which oversees community clinics and programs throughout the state. The new funds would be used to expand programs targeting Oklahoma’s high infant mortality death rate.",
+                     "children": [{
+                            "name": "Jan'14",
+                            "appropriation14": 100,
+                            "appropriation13": 9,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 5,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Feb'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 5,
+                        "appropriation12": 4,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Mar'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 4,
+                        "appropriation12": 3,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q2-14",
+                    "appropriation14": 300,
+                    "appropriation13": 12,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 842122261,
+                    "appropriation12": 10,
+                    "annotation": "OCHA oversees the SoonerCare program, which dispenses federal and state Medicaid funds to serve qualified poor and disabled Oklahomans.  It receives 14% of total state appropriations. There is a proposed 4.3% funding increase for 2014, much of which would be used to cover the cost of new enrollments resulting from implementation of the federal government’s Medicaid expansion.",
+                     "children": [{
+                            "name": "Apr'14",
+                            "appropriation14": 100,
+                            "appropriation13": 5,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 7,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "May'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 1,
+                        "appropriation12": 2,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Jun'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 6,
+                        "appropriation12": 1,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q3-14",
+                    "appropriation14": 300,
+                    "appropriation13": 12,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 209579129,
+                    "appropriation12": 10,
+                    "annotation": "The Department of Mental Health would receive one of the largest percentage increases—5.9%—of all major state agencies under the proposed 2014 budget. The additional money would be used to open new mental health crisis centers and provide more services for troubled children, prescription drug abusers and people at risk of suicide. The department currently receives 5% of all state appropriations.",
+                     "children": [{
+                            "name": "Jul'14",
+                            "appropriation14": 100,
+                            "appropriation13": 2,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 7,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Aug'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 7,
+                        "appropriation12": 1,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Sep'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 3,
+                        "appropriation12": 2,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q4-15",
+                    "appropriation14": 300,
+                    "appropriation13": 8,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 842122261,
+                    "appropriation12": 15,
+                    "annotation": "OCHA oversees the SoonerCare program, which dispenses federal and state Medicaid funds to serve qualified poor and disabled Oklahomans.  It receives 14% of total state appropriations. There is a proposed 4.3% funding increase for 2014, much of which would be used to cover the cost of new enrollments resulting from implementation of the federal government’s Medicaid expansion.",
+                     "children": [{
+                            "name": "Oct'14",
+                            "appropriation14": 100,
+                            "appropriation13": 4,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 9,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Nov'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 3,
+                        "appropriation12": 2,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Dec'14",
+                        "appropriation14" : 100,
+                        "appropriation13" : 1,
+                        "appropriation12": 4,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                }
+            ]
+        },
+        {
+            "name": "2013",
+            "appropriation14": 1200,
+            "appropriation13": 1295187762,
+            "appropriation12": 1154810182,
+            "appropriation11": 6948363588,
+            "appropriation10": 6433088405,
+            "appropriation09": 1126729503,
+            "annotation": "Health care expenditures account for 19% of legislative appropriations. The biggest portion finances the state’s share of Medicaid spending for poor and disabled Oklahomans. The federal government also contributes to these programs.",
+            "children": [
+                {
+                    "name": "Q1-13",
+                    "appropriation14": 300,
+                    "appropriation13": 61783682,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 75028113,
+                    "appropriation12": 59477971,
+                    "annotation": "There is a proposed a 1% funding increase for the Department of Health, which oversees community clinics and programs throughout the state. The new funds would be used to expand programs targeting Oklahoma’s high infant mortality death rate.",
+                     "children": [{
+                            "name": "Jan'13",
+                            "appropriation14": 100,
+                            "appropriation13": 2840334,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 3140334,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Feb'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 7337000,
+                        "appropriation12": 17300000,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Mar'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 39600000,
+                        "appropriation12": 59600000,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q2-13",
+                    "appropriation14": 300,
+                    "appropriation13": 921983007,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 842122261,
+                    "appropriation12": 912219389,
+                    "annotation": "OCHA oversees the SoonerCare program, which dispenses federal and state Medicaid funds to serve qualified poor and disabled Oklahomans.  It receives 14% of total state appropriations. There is a proposed 4.3% funding increase for 2014, much of which would be used to cover the cost of new enrollments resulting from implementation of the federal government’s Medicaid expansion.",
+                     "children": [{
+                            "name": "Apr'13",
+                            "appropriation14": 100,
+                            "appropriation13": 2840334,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 3140334,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "May'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 7337000,
+                        "appropriation12": 17300000,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Jun'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 39600000,
+                        "appropriation12": 59600000,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q3-13",
+                    "appropriation14": 300,
+                    "appropriation13": 311421073,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 209579129,
+                    "appropriation12": 183112822,
+                    "annotation": "The Department of Mental Health would receive one of the largest percentage increases—5.9%—of all major state agencies under the proposed 2014 budget. The additional money would be used to open new mental health crisis centers and provide more services for troubled children, prescription drug abusers and people at risk of suicide. The department currently receives 5% of all state appropriations.",
+                     "children": [{
+                            "name": "Jul'13",
+                            "appropriation14": 100,
+                            "appropriation13": 2840334,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 3140334,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Aug'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 7337000,
+                        "appropriation12": 17300000,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Sep'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 39600000,
+                        "appropriation12": 59600000,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                },
+                {
+                    "name": "Q4-13",
+                    "appropriation14": 300,
+                    "appropriation13": 921983007,
+                    "appropriation11": 6948363588,
+                    "appropriation10": 6433088405,
+                    "appropriation09": 842122261,
+                    "appropriation12": 912219389,
+                    "annotation": "OCHA oversees the SoonerCare program, which dispenses federal and state Medicaid funds to serve qualified poor and disabled Oklahomans.  It receives 14% of total state appropriations. There is a proposed 4.3% funding increase for 2014, much of which would be used to cover the cost of new enrollments resulting from implementation of the federal government’s Medicaid expansion.",
+                     "children": [{
+                            "name": "Oct'13",
+                            "appropriation14": 100,
+                            "appropriation13": 2840334,
+                            "appropriation11": 6948363588,
+                            "appropriation10": 6433088405,
+                            "appropriation09": 3925266,
+                            "appropriation12": 3140334,
+                            "annotation": "A.B.L.E is Alcoholic Beverage Law Enforcement."
+                        },
+                        {
+                        "name" : "Nov'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 7337000,
+                        "appropriation12": 17300000,
+                        "appropriation11": 15381358,
+                        "appropriation10": 16550345,
+                        "appropriation09": 19247063
+                        },
+                        {
+                        "name" : "Dec'13",
+                        "appropriation14" : 100,
+                        "appropriation13" : 39600000,
+                        "appropriation12": 59600000,
+                        "appropriation11": 57641865,
+                        "appropriation10": 52502812,
+                        "appropriation09": 58067785
+                        }]
+                }
+            ]
+        }
+    ]
+}

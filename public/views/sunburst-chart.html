@@ -1,0 +1,578 @@
+
+
+<head>
+
+	<style>
+
+    iron-icon {
+    width: 23px !important;
+  }
+
+		google-chart{		
+   	 	width: 110px;
+    	height: 96px;		
+		}
+		
+		text {
+			font: 11px "GE Inspira";
+			cursor: pointer;
+		}
+		
+path.slice{
+	stroke-width:2px;
+}
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+} 
+svg text.percent{
+	fill:white;
+	text-anchor:middle;
+	font-size:12px;
+}
+.color1{
+	background-color:#ff5c33; 
+}
+.color2{
+	background-color:#29a329; 
+}
+.color3{
+	background-color:#3333ff; 
+}
+.color4{
+	background-color:#c6538c; 
+}
+.span1{
+ width:20px;
+ height:18px;
+ display:block;
+ float:left;
+ margin-right:10px;
+	}
+.legendsPie td{
+	padding:0 6px;
+	
+}
+.legendsPie h5{
+	float: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+	
+}
+.legendsPie{
+
+    margin-left: 100px;
+	margin-top:30px;
+}
+.google-visualization-tooltip{
+  display:table;
+}
+g{
+  cursor:pointer;
+}
+		
+
+		path {
+			stroke: #fff;
+			/*stroke-width: 1.5;
+			 */
+			cursor: pointer;
+		}
+
+		
+
+		#annotation {
+			border: 3px solid rgb(53, 135, 212);
+			margin-top: 0px;
+			padding-top: 0px;
+			border-radius: 4px;
+			position: absolute;
+			min-height: 4.8em;
+			width: 280px;
+			top: 50px;
+			left: 250px;
+			background-color: rgb(53, 135, 212);
+			color: white;
+		}
+
+		#col2 {
+			border: 3px solid rgb(53, 135, 212);
+    		margin-left: 184px;
+			margin-top: 0px;
+			padding-top: 0px;
+			border-radius: 4px;
+/* 			padding-left:10px; */
+			position: absolute;
+			min-height: 4.8em;
+			width: 250px;
+			top: 50px;
+			left: 750px;
+			font-family: "GE Sans", "ge-sans", "GE Inspira", "ge-inspira", Helvetica, Arial, sans-serif;
+		}
+
+	google-chart{		
+   	 	width: 110px;
+    	height: 96px;		
+		}
+		p {
+			-webkit-margin-after: 0em;
+			-webkit-margin-before: 0em;
+			margin-bottom: 0em;
+			margin-top: 0em;
+		}
+
+		#current {
+/* 			font-weight: bold; */
+			font-family: "GE Sans", "ge-sans", "GE Inspira", "ge-inspira", Helvetica, Arial, sans-serif
+		}
+		#left	{
+			position: absolute;
+			top: 30px;
+			left: 350px;
+		}
+		#right	{
+			position: absolute;
+			top: 30px;
+			left: 960px;
+		}
+		
+		#iw-container .iw-title {
+    font-family: "GE Sans", "ge-sans", "GE Inspira", "ge-inspira", Helvetica, Arial, sans-serif;
+/*     font-size: 22px; */
+/*     font-weight: 400; */
+    padding: 10px;
+    background-color: #005cb9;
+    color: white;
+    margin: 0;
+    border-radius: 2px 2px 0 0;
+}
+
+#iw-container {
+    margin-bottom: 10px;
+/*     width: 350px; */
+}
+
+td.details-control {
+    background: url('images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('images/details_close.png') no-repeat center center;
+}
+
+table.display {
+    border-collapse: collapse !important;
+    border: 2px solid #8B8D8F;
+    margin: 10px 4px 4px;
+    width: 99%;
+}
+.display thead {
+    background: #005cb9;
+    color: white;
+    border: 2px solid #005cb9;
+    line-height: 30px;
+}
+.display tr {
+    border: 1px solid;
+}
+.display td {
+    align-content: center;
+}
+table#child1,  table#child2 {
+    margin: -1px 0px -2px 2px;
+    padding: 0px;
+    width: 100%;
+}
+tr.hide {
+    display: none;
+}
+#link1 i, #link2 i{
+	background: #DDD;
+	cursor:pointer;
+	padding:5px;
+	margin:2px;
+}
+#child1 thead, #child2 thead{
+	background: #7C7C84;
+	border: 2px solid #7C7C84;
+	line-height: 20px;
+}
+.google-visualization-tooltip{
+			display:table;
+			white-space: nowrap;
+			width: 12px !important;
+			max-width:15px  !important; 
+            border: none !important;
+            border-radius: 5px !important;
+          	background-color: rgb(255, 255, 179) !important;
+            position: absolute !important;
+            font-weight: bold;
+            opacity: 0.9;
+    		filter: alpha(opacity=90); 
+    		text-align: center; 
+    		/*  display:table;
+    position: absolute !important;
+    width: 30px;
+    background: rgba(61,102,143,0.9);
+    padding: 5px;
+    margin: 0 0 12px 0;
+    color: #fff;
+    z-index: 100;
+    bottom: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    		 */
+}
+.tooltip:after {
+    content: "";
+    position: absolute !important;
+    bottom: -14px;
+    z-index: 100;
+    border: 0 solid rgba(61,102,143,0.9);
+    border-bottom: 14px solid transparent;
+    width: 100%;
+}
+.tooltip:before {
+    content: "";
+    position: absolute !important;
+    border: 0 solid rgba(61,102,143,0.9);
+    bottom: -14px;
+    z-index: 100;
+}
+	</style>
+</head>
+<div id="col2" style="background: #3E87E8;color: #fff;">
+
+	<p style="margin: 0; padding: 10px;">
+		Order and Product Line information for Last 4 Years
+	</p>
+</div>
+
+<div id="right">
+<!-- 		<b>Amounts and change</b> -->
+</div>
+<px-card style="width: 391px;float: left; height: 300px;">
+
+<h3>Details Since Last Login</h3>
+	<table style="border-collapse:collapse; align:center">
+	<tr>
+	 <!-- <td colspan="2" align="center"><font color="#ff5c33">New Orders Received</font></td>
+	<td></td>
+	<tr><td colspan="2" align="center"><font color="#ff5c33"><b>10</b></font></td></tr>-->
+	
+<td align="left" style="padding-left:15px">
+
+	<!-- <google-chart id="Pie1"
+      type="pie"
+      id="selection-chart"
+      options='{"pieHole":"0.5","legend": "none","pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        }, "tooltip": {"isHtml": "true"}, "slices": [{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"           
+ } }'
+
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"},{"type": "string", "role": "tooltip"}  ]'
+      rows='[ ["Orders received", 1,"32FEGH123"],["Orders received", 1,"32FEGH124"],["Orders received", 1,"32FEGH125"],["Orders received", 1,"32FEGH126"],["Orders received", 1,"32FEGH127"],["Orders received", 1,"32FEGH128"],["Orders received", 1,"32FEGH129"],["Orders received", 1,"32FEGH130"],["Orders received", 1,"32FEGH131"],["Orders received", 1,"32FEGH132"]]'>
+   </google-chart> -->
+   <google-chart id="Pie1"
+      type="pie"
+      
+      options='{"fontSize":"10", "pieHole":"0.5","legend": "none","font-family": "GE Inspira","pieSliceTextStyle": {
+            
+            "fontSize":"18"
+        }, "tooltip": {"isHtml": "true", "textStyle": { "fontSize": "12"}}, "slices": [{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"           
+ } }'
+
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"},{"type": "string", "role": "tooltip"}  ]'
+      rows='[ ["Orders received", 1,"32FEGH123"],["Orders received", 1,"32FEGH124"],["Orders received", 1,"32FEGH125"],["Orders received", 1,"32FEGH126"],["Orders received", 1,"32FEGH127"],["Orders received", 1,"32FEGH128"],["Orders received", 1,"32FEGH129"],["Orders received", 1,"32FEGH130"],["Orders received", 1,"32FEGH131"],["Orders received", 1,"32FEGH132"]]'>
+   </google-chart>
+	</td>
+		<td align="center">
+	<!-- <google-chart id="Pie2"
+      type="pie"
+      id="selection-chart"
+      options='{"pieHole": "0.5","legend":"none", "pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        }, "slices": [{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"
+             
+ } }'
+
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"} ,{"type": "string", "role": "tooltip"}]'
+      rows='[["Orders Delievered", 1,"32FEGH133"],["Orders Delievered", 1,"32FEGH134"],["Orders Delievered", 1,"32FEGH135"],["Orders Delievered", 1,"32FEGH136"],["Orders Delievered", 1,"32FEGH137"]]'>
+   </google-chart> -->
+   <google-chart id="Pie2"
+      type="pie"
+      id="selection-chart"
+      options='{"color": "white !important","font-family": "GE Inspira","fontSize":"12","pieHole": "0.5","legend":"none", "pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        },"tooltip": {"isHtml": "true","textStyle": { "fontSize": "12" }},  "slices": [{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"
+             
+ } }'
+
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"} ,{"type": "string", "role": "tooltip"}]'
+      rows='[["Orders Delievered", 1,"32FEGH133"],["Orders Delievered", 1,"32FEGH134"],["Orders Delievered", 1,"32FEGH135"],["Orders Delievered", 1,"32FEGH136"],["Orders Delievered", 1,"32FEGH137"]]'>
+   </google-chart>
+	</td>
+	<td align="right">
+	<!-- <google-chart id="Pie3"
+      type="pie"
+      id="selection-chart"
+      options='{"pieHole": "0.5","legend":"none","pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        }, "slices": [{"color": "#3333ff"},{"color": "#3333ff"},{"color": "#3333ff"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"
+        } }'
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"} ,{"type": "string", "role": "tooltip"}]'
+      rows='[ ["New ProductLines", 1,"32FEGH138"],["New ProductLines", 1,"32FEGH139"],["New ProductLines", 1,"32FEGH140"]]'>
+    </google-chart> -->
+    <google-chart id="Pie3"
+      type="pie"
+      id="selection-chart"
+      options='{"font-family": "GE Inspira","fontSize":"12","pieHole": "0.5","legend":"none","pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        },"tooltip": {"isHtml": "true","textStyle": { "fontSize": "12"}},  "slices": [{"color": "#3333ff"},{"color": "#3333ff"},{"color": "#3333ff"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"
+        } }'
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"} ,{"type": "string", "role": "tooltip"}]'
+      rows='[ ["New ProductLines", 1,"32FEGH138"],["New ProductLines", 1,"32FEGH139"],["New ProductLines", 1,"32FEGH140"]]'>
+    </google-chart>
+	</td>
+	</tr>
+	
+	</table>
+	<div id="division1" style="margin-top: 19px;
+    margin-left: 20px;">
+	<!-- <google-chart
+      type="pie"
+      id="selection-chart"
+      options='{"pieHole": "0.5","legend":"none","pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        }, "slices": [{"color": "#c6538c"},{"color": "#c6538c"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"
+        } }'
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"},{"type": "string", "role": "tooltip"} ]'
+      rows='[ ["New Customers", 1,"32FEGH141"],["New Customers", 1,"32FEGH142"]]'>
+    </google-chart> -->
+    <google-chart
+      type="pie"
+      id="selection-chart"
+      options='{"font-family": "GE Inspira","fontSize":"12","pieHole": "0.5","legend":"none","pieSliceTextStyle": {
+            "color": "white",
+            "fontSize":"18"
+        },"tooltip": {"isHtml": "true","textStyle": { "fontSize": "12"}},  "slices": [{"color": "#c6538c"},{"color": "#c6538c"}],
+      "chartArea": {"left": "2", 
+            "top": "5", 
+            "width": "100%", 
+            "height": "80%"
+        } }'
+      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"},{"type": "string", "role": "tooltip"} ]'
+      rows='[ ["New Customers", 1,"32FEGH141"],["New Customers", 1,"32FEGH142"]]'>
+    </google-chart>
+	</div>
+	<div id="division2" style="margin-top:-130px;padding-left: 65px;">
+	<table class="legendsPie">
+	<tr>
+	<td><span class="span1" >10</span>
+	 <span class="span1 color1"></span> 
+	<h5>Orders Received</h5></td>
+	</tr>
+	<tr>
+	<td><span class="span1" >5</span>
+	<span class="span1 color2"></span> 
+	<h5 >Orders Delivered</h5></td>
+	</tr>
+	<tr>
+	<td><span class="span1" >3</span>
+	<span class="span1 color3"></span>
+	<h5 >New ProductLines</h5></td>
+	</tr>
+	<tr>
+	<td><span class="span1" >2</span>
+	<span class="span1 color4"></span>
+	<h5 >New Customers</h5></td>
+	</tr>
+</table>
+</div>
+</px-card>
+<px-card style="width: 576px;float: right; height: 300px;">
+<div id="myBubbleChart"></div>
+</px-card>
+
+ <px-card class="pull-left" style="width:970px">
+<paper-button class="pull-left" style="padding-bottom: 3px;color: white;background-color: #13222F;margin: 13px 20px 0 0;padding: 7px 15px;" raised><iron-icon icon="file-download"></iron-icon>Export Price List</paper-button>
+<label style="margin-left: 8px; font-family: GE Inspira;float: right;margin-top: 35px !important;margin-right: 20px !important;">Exclude My Orders </label>
+<paper-toggle-button class="pull-right" style="margin-left: 0;margin-top: 32px;"></paper-toggle-button>
+<iron-icon icon="icons:search" class="pull-right search-style-s2"></iron-icon> <paper-input label="No Of Days" class="w150 mr20 pull-right p0"></paper-input>
+
+<div class="pull-left w100p">
+<!-- 	<px-data-table selected-rows="{{mySelectedItems}}" table-columns filterable selectable table-data="{{json1}}"></px-data-table> -->
+<table id="parent1" class="display" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+         <th style="width: 50px;"></th>
+         <th style="width: 100px;">Order No</th>
+         <th style="width: 250px;">Customer PO</th>
+         <th style="width: 250px;">Customer</th>
+         <th style="width: 250px;">Product</th>
+         <th style="width: 100px;"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td style="width: 50px; text-align: center;"><input type="checkbox" /></td>
+         <td style="width: 100px; text-align: center;">4008786</td>
+         <td style="width: 250px; text-align: center;">4700178902</td>
+         <td style="width: 250px; text-align: center;">Shell</td>
+         <td style="width: 250px; text-align: center;">Masonellan</td>
+         <td style="width: 100px; text-align: center;"><a id="link1"><i class="fa-plus fa" onclick="toggleTable1();"></i></a></td>
+        </tr>
+        <tr class="hide">
+         <td>&nbsp;</td>
+         <td colspan="5">
+          <table id="child1" class="display" cellspacing="0" width="100%" style="display:none;">
+           <thead>
+            <th style="width: 90px; text-align: center;">&nbsp;</th>
+            <th style="width: 250px; text-align: center;">Serial No</th>
+            <th style="width: 250px; text-align: center;">Model</th>
+            <th style="width: 250px; text-align: center;">Tag No</th>
+            <th style="width: 90px; text-align: center;">Description</th>
+           </thead>
+           <tbody>
+            <tr>
+             <td style="width: 90px; text-align: center;"><input type="checkbox" /></td>
+             <td style="width: 90px; text-align: center;">A-15-14355</td>
+             <td style="width: 200px; text-align: center;">27000</td>
+             <td style="width: 200px; text-align: center;">Tag 1234</td>
+             <td style="width: 120px; text-align: center;">2701-56-1998</td>
+            </tr>
+            <tr>
+             <td style="width: 90px; text-align: center;"><input type="checkbox" /></td>
+             <td style="width: 100px; text-align: center;">A-15-14356</td>
+             <td style="width: 250px; text-align: center;">27001</td>
+             <td style="width: 250px; text-align: center;">Tag 1235</td>
+             <td style="width: 90px; text-align: center;">2701-56-1998</td>
+            </tr>
+             <tr>
+             <td style="width: 90px; text-align: center;"><input type="checkbox" /></td>
+             <td style="width: 100px; text-align: center;">A-15-14357</td>
+             <td style="width: 250px; text-align: center;">32000</td>
+             <td style="width: 250px; text-align: center;">Tag 4567</td>
+             <td style="width: 90px; text-align: center;">2701-56-1998</td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td style="width: 50px; text-align: center;"><input type="checkbox" /></td>
+          <td style="width: 100px; text-align: center;">114254</td>
+          <td style="width: 250px; text-align: center;">1088557</td>
+          <td style="width: 250px; text-align: center;">Process Sales, Inc.</td>
+          <td style="width: 250px; text-align: center;">Masonellan</td>
+          <td style="width: 100px; text-align: center;"><a id="link2"><i class="fa-plus fa" onclick="toggleTable2();"></i></a></td>
+         </tr>
+        <tr class="hide">
+         <td>&nbsp;</td>
+         <td colspan="5">
+          <table id="child2" class="display" cellspacing="0" width="100%" style="display:none;">
+            <thead>
+            <th style="width: 90px; text-align: center;">&nbsp;</th>
+            <th style="width: 250px; text-align: center;">Serial No</th>
+            <th style="width: 250px; text-align: center;">Model</th>
+            <th style="width: 250px; text-align: center;">Tag No</th>
+            <th style="width: 90px; text-align: center;">Description</th>
+           </thead>
+           <tbody>
+             <tr>
+             <td style="width: 90px; text-align: center;"><input type="checkbox" /></td>
+             <td style="width: 90px; text-align: center;">A-15-14355</td>
+             <td style="width: 200px; text-align: center;">27000</td>
+             <td style="width: 200px; text-align: center;">Tag 1234</td>
+             <td style="width: 120px; text-align: center;">2701-56-1998</td>
+            </tr>
+            <tr>
+             <td style="width: 90px; text-align: center;"><input type="checkbox" /></td>
+             <td style="width: 100px; text-align: center;">A-15-14356</td>
+             <td style="width: 250px; text-align: center;">27001</td>
+             <td style="width: 250px; text-align: center;">Tag 1235</td>
+             <td style="width: 90px; text-align: center;">2701-56-1998</td>
+            </tr>
+             <tr>
+             <td style="width: 90px; text-align: center;"><input type="checkbox" /></td>
+             <td style="width: 100px; text-align: center;">A-15-14357</td>
+             <td style="width: 250px; text-align: center;">32000</td>
+             <td style="width: 250px; text-align: center;">Tag 4567</td>
+             <td style="width: 90px; text-align: center;">2701-56-1998</td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+      </tbody>
+      </table>
+</div>
+
+</px-table> 
+
+
+  <script>
+      /* $("#link1").click(function(){
+                      $("#child1").toggle();
+      });
+      $("#link2").on("click", function(){
+                      $("#child2").toggle();
+      }); */
+      function toggleTable1(){
+    	  $("#child1").toggle();
+    	  if($("#child1").css("display")=="table"){
+    		  $("#link1 i").removeClass("fa-plus").addClass("fa-minus");
+    		  $("#link1 i").closest("tr").next().removeClass("hide").addClass("show");
+    	  }else{
+    		  $("#link1 i").removeClass("fa-minus").addClass("fa-plus");
+    		  $("#link1 i").closest("tr").next().removeClass("show").addClass("hide");
+    	  }
+      }
+      function toggleTable2(){
+    	  $("#child2").toggle();
+    	  if($("#child2").css("display")=="table"){
+    		  $("#link2 i").removeClass("fa-plus").addClass("fa-minus");
+    		  $("#link2 i").closest("tr").next().removeClass("hide").addClass("show");
+    	  }else{
+    		  $("#link2 i").removeClass("fa-minus").addClass("fa-plus");
+    		  $("#link2 i").closest("tr").next().removeClass("show").addClass("hide");
+    	  }
+      }
+      </script>
