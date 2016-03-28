@@ -1,3 +1,75 @@
+<style>
+@CHARSET "ISO-8859-1";
+
+.w100p { width: 100% !important; }
+.w150 { width: 150px !important; }
+.w250 { width: 250px !important; }
+
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt25 { margin-top: 25px !important; }
+.mt30 { margin-top: 30px !important; }
+.ml10 { margin-left: 10px !important; }
+.mr10 { margin-right: 10px !important; }
+.mr20 { margin-right: 20px !important; }
+.mb20 { margin-bottom: 20px !important; }
+
+.p0 { padding: 0 !important; }
+.pt20 { padding-top: 20px !important; }
+
+.cursor-pointer { cursor: pointer; }
+.fnt-red { color: red; } 
+
+.bg-red { background: red; }
+
+.upload-header-s1 > px-card-header > h3 {
+	border: none;
+}
+
+.custom-style-s1 > div + div > aha-table > div > div > span > span:nth-child(4) > div + div {
+	min-height: 20px !important;
+	max-height: 300px !important;
+	white-space: normal !important;
+}
+
+.search-style-s2 {
+	position: relative;
+    top: 26px;
+    right: 22px;
+}
+.search-style-s3 {
+	position: relative;
+    top: 26px;
+    right: 0;
+    z-index: 222;
+}
+
+.green {
+	color: #FFF;
+	background: #46AD00;
+}
+.green:hover {
+	color: #FFF;
+	background: #4EC100;
+}
+
+.border-s1 {
+	border: 1px solid #737373;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.border-s2 {
+	border: 1px solid #737373;
+}
+.border-s3 {
+	border: 1px solid #737373;
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+}
+.file-center { padding: 0 260px !important; }
+</style>
 
 <px-card class="pull-left upload-header-s1" style="width:1000px;">
 	<div id="upload" class="border-s3 pull-left w100p">
@@ -16,12 +88,13 @@
 	</div>
 </px-card>
 
+
 <px-card class="pull-left" style="width:1000px;">
 	
 <div class="pull-left w100p border-s1">
 	<div class="pull-left w100p">
 
-<label class="pull-left mr10 mt25">Region:</label>
+<lable class="pull-left mr10 mt25">Region:</lable>
 <select class="style-scope aha-table mt20">
 	<option class="style-scope aha-table">Europe</option>
 	<option class="style-scope aha-table">North America</option>
@@ -59,7 +132,6 @@
 	<px-data-table-column name="Cost1"></px-data-table-column>
 	</px-data-table>
 </div>
-
 
 </px-card>
 

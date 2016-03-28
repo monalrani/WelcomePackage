@@ -2,7 +2,77 @@
 
 <head>
 
-	<style>
+		<style>
+@CHARSET "ISO-8859-1";
+
+.w100p { width: 100% !important; }
+.w150 { width: 150px !important; }
+.w250 { width: 250px !important; }
+
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt25 { margin-top: 25px !important; }
+.mt30 { margin-top: 30px !important; }
+.ml10 { margin-left: 10px !important; }
+.mr10 { margin-right: 10px !important; }
+.mr20 { margin-right: 20px !important; }
+.mb20 { margin-bottom: 20px !important; }
+
+.p0 { padding: 0 !important; }
+.pt20 { padding-top: 20px !important; }
+
+.cursor-pointer { cursor: pointer; }
+.fnt-red { color: red; } 
+
+.bg-red { background: red; }
+
+.upload-header-s1 > px-card-header > h3 {
+	border: none;
+}
+
+.custom-style-s1 > div + div > aha-table > div > div > span > span:nth-child(4) > div + div {
+	min-height: 20px !important;
+	max-height: 300px !important;
+	white-space: normal !important;
+}
+
+.search-style-s2 {
+	position: relative;
+    top: 26px;
+    right: 22px;
+}
+.search-style-s3 {
+	position: relative;
+    top: 26px;
+    right: 0;
+    z-index: 222;
+}
+
+.green {
+	color: #FFF;
+	background: #46AD00;
+}
+.green:hover {
+	color: #FFF;
+	background: #4EC100;
+}
+
+.border-s1 {
+	border: 1px solid #737373;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.border-s2 {
+	border: 1px solid #737373;
+}
+.border-s3 {
+	border: 1px solid #737373;
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+}
+.file-center { padding: 0 260px !important; }
 
     iron-icon {
     width: 23px !important;
@@ -67,7 +137,18 @@ svg text.percent{
 	margin-top:30px;
 }
 .google-visualization-tooltip{
-  display:table;
+display:table;
+white-space: nowrap;
+width: 12px !important;
+max-width:15px !important; 
+border: none !important;
+border-radius: 5px !important;
+background-color: rgb(255, 255, 179) !important;
+position: absolute !important;
+font-weight: bold;
+opacity: 0.9;
+filter: alpha(opacity=90); 
+text-align: center; 
 }
 g{
   cursor:pointer;
@@ -112,10 +193,6 @@ g{
 			font-family: "GE Sans", "ge-sans", "GE Inspira", "ge-inspira", Helvetica, Arial, sans-serif;
 		}
 
-	google-chart{		
-   	 	width: 110px;
-    	height: 96px;		
-		}
 		p {
 			-webkit-margin-after: 0em;
 			-webkit-margin-before: 0em;
@@ -199,50 +276,9 @@ tr.hide {
 	border: 2px solid #7C7C84;
 	line-height: 20px;
 }
-.google-visualization-tooltip{
-			display:table;
-			white-space: nowrap;
-			width: 12px !important;
-			max-width:15px  !important; 
-            border: none !important;
-            border-radius: 5px !important;
-          	background-color: rgb(255, 255, 179) !important;
-            position: absolute !important;
-            font-weight: bold;
-            opacity: 0.9;
-    		filter: alpha(opacity=90); 
-    		text-align: center; 
-    		/*  display:table;
-    position: absolute !important;
-    width: 30px;
-    background: rgba(61,102,143,0.9);
-    padding: 5px;
-    margin: 0 0 12px 0;
-    color: #fff;
-    z-index: 100;
-    bottom: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 11px;
-    		 */
-}
-.tooltip:after {
-    content: "";
-    position: absolute !important;
-    bottom: -14px;
-    z-index: 100;
-    border: 0 solid rgba(61,102,143,0.9);
-    border-bottom: 14px solid transparent;
-    width: 100%;
-}
-.tooltip:before {
-    content: "";
-    position: absolute !important;
-    border: 0 solid rgba(61,102,143,0.9);
-    bottom: -14px;
-    z-index: 100;
-}
+
 	</style>
+	
 </head>
 <div id="col2" style="background: #3E87E8;color: #fff;">
 
@@ -252,35 +288,16 @@ tr.hide {
 </div>
 
 <div id="right">
-<!-- 		<b>Amounts and change</b> -->
 </div>
 <px-card style="width: 391px;float: left; height: 300px;">
 
 <h3>Details Since Last Login</h3>
 	<table style="border-collapse:collapse; align:center">
 	<tr>
-	 <!-- <td colspan="2" align="center"><font color="#ff5c33">New Orders Received</font></td>
-	<td></td>
-	<tr><td colspan="2" align="center"><font color="#ff5c33"><b>10</b></font></td></tr>-->
+
 	
 <td align="left" style="padding-left:15px">
 
-	<!-- <google-chart id="Pie1"
-      type="pie"
-      id="selection-chart"
-      options='{"pieHole":"0.5","legend": "none","pieSliceTextStyle": {
-            "color": "white",
-            "fontSize":"18"
-        }, "tooltip": {"isHtml": "true"}, "slices": [{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"},{"color": "#ff5c33"}],
-      "chartArea": {"left": "2", 
-            "top": "5", 
-            "width": "100%", 
-            "height": "80%"           
- } }'
-
-      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"},{"type": "string", "role": "tooltip"}  ]'
-      rows='[ ["Orders received", 1,"32FEGH123"],["Orders received", 1,"32FEGH124"],["Orders received", 1,"32FEGH125"],["Orders received", 1,"32FEGH126"],["Orders received", 1,"32FEGH127"],["Orders received", 1,"32FEGH128"],["Orders received", 1,"32FEGH129"],["Orders received", 1,"32FEGH130"],["Orders received", 1,"32FEGH131"],["Orders received", 1,"32FEGH132"]]'>
-   </google-chart> -->
    <google-chart id="Pie1"
       type="pie"
       
@@ -299,23 +316,7 @@ tr.hide {
    </google-chart>
 	</td>
 		<td align="center">
-	<!-- <google-chart id="Pie2"
-      type="pie"
-      id="selection-chart"
-      options='{"pieHole": "0.5","legend":"none", "pieSliceTextStyle": {
-            "color": "white",
-            "fontSize":"18"
-        }, "slices": [{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"},{"color": "#29a329"}],
-      "chartArea": {"left": "2", 
-            "top": "5", 
-            "width": "100%", 
-            "height": "80%"
-             
- } }'
 
-      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"} ,{"type": "string", "role": "tooltip"}]'
-      rows='[["Orders Delievered", 1,"32FEGH133"],["Orders Delievered", 1,"32FEGH134"],["Orders Delievered", 1,"32FEGH135"],["Orders Delievered", 1,"32FEGH136"],["Orders Delievered", 1,"32FEGH137"]]'>
-   </google-chart> -->
    <google-chart id="Pie2"
       type="pie"
       id="selection-chart"
@@ -335,21 +336,7 @@ tr.hide {
    </google-chart>
 	</td>
 	<td align="right">
-	<!-- <google-chart id="Pie3"
-      type="pie"
-      id="selection-chart"
-      options='{"pieHole": "0.5","legend":"none","pieSliceTextStyle": {
-            "color": "white",
-            "fontSize":"18"
-        }, "slices": [{"color": "#3333ff"},{"color": "#3333ff"},{"color": "#3333ff"}],
-      "chartArea": {"left": "2", 
-            "top": "5", 
-            "width": "100%", 
-            "height": "80%"
-        } }'
-      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"} ,{"type": "string", "role": "tooltip"}]'
-      rows='[ ["New ProductLines", 1,"32FEGH138"],["New ProductLines", 1,"32FEGH139"],["New ProductLines", 1,"32FEGH140"]]'>
-    </google-chart> -->
+	
     <google-chart id="Pie3"
       type="pie"
       id="selection-chart"
@@ -371,21 +358,7 @@ tr.hide {
 	</table>
 	<div id="division1" style="margin-top: 19px;
     margin-left: 20px;">
-	<!-- <google-chart
-      type="pie"
-      id="selection-chart"
-      options='{"pieHole": "0.5","legend":"none","pieSliceTextStyle": {
-            "color": "white",
-            "fontSize":"18"
-        }, "slices": [{"color": "#c6538c"},{"color": "#c6538c"}],
-      "chartArea": {"left": "2", 
-            "top": "5", 
-            "width": "100%", 
-            "height": "80%"
-        } }'
-      cols='[ {"label": "Regions", "type": "string"},{"label": "Data", "type": "number"},{"type": "string", "role": "tooltip"} ]'
-      rows='[ ["New Customers", 1,"32FEGH141"],["New Customers", 1,"32FEGH142"]]'>
-    </google-chart> -->
+	
     <google-chart
       type="pie"
       id="selection-chart"
@@ -438,7 +411,6 @@ tr.hide {
 <iron-icon icon="icons:search" class="pull-right search-style-s2"></iron-icon> <paper-input label="No Of Days" class="w150 mr20 pull-right p0"></paper-input>
 
 <div class="pull-left w100p">
-<!-- 	<px-data-table selected-rows="{{mySelectedItems}}" table-columns filterable selectable table-data="{{json1}}"></px-data-table> -->
 <table id="parent1" class="display" cellspacing="0" width="100%">
       <thead>
         <tr>
@@ -549,12 +521,6 @@ tr.hide {
 
 
   <script>
-      /* $("#link1").click(function(){
-                      $("#child1").toggle();
-      });
-      $("#link2").on("click", function(){
-                      $("#child2").toggle();
-      }); */
       function toggleTable1(){
     	  $("#child1").toggle();
     	  if($("#child1").css("display")=="table"){
