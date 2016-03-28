@@ -1,48 +1,65 @@
 
-<px-card class="pull-left upload-header-s1" style="width:666px;">
-	<paper-input label="Price LIst Name:" id="aadd"></paper-input>
-	<div class="pull-left w100p mb20">
+<px-card class="pull-left upload-header-s1" style="width:1000px;">
+	<div id="upload" class="border-s3 pull-left w100p">
+	<paper-input label="Price LIst Name:" id="aadd" class="w250 mb20"></paper-input>
+	<div class="pull-left w100p mb20 file-center">
 		<lable class="pull-left">Upload File:</lable>
 		<input type="file" class="pull-left ml10" />
 		<lable class="pull-right">Replace</lable>
 		<input type="checkbox" class="pull-right" />
 	</div>
 	<div class="pull-left w100p">
-		<a href="#" class="btn pull-right ml10">Submit</a>
-		<a href="#" class="btn pull-right ml10">Reset</a>
+
+		<paper-button class="pull-right custom green ml10 mt20" raised>Submit</paper-button>
+		<paper-button class="pull-right green ml10 mt20" raised>Reset</paper-button>
 	</div>
-	
+	</div>
 </px-card>
 
-<px-card header-text="Chat Box" style="width:300px;float: right;">
-	<paper-custom-tab last-month-array="{{lastMonthChatArr}}" last-week-array="{{lastWeekChatArr}}"></paper-custom-tab>
-</px-card>
-
-<px-card class="pull-left" style="width:666px;">
+<px-card class="pull-left" style="width:1000px;">
 	
-<!-- <paper-dropdown-menu label="Dinosaurs" noink no-animations>
-  <paper-listbox class="dropdown-content">
-    <paper-item>allosaurus</paper-item>
-    <paper-item>brontosaurus</paper-item>
-    <paper-item>carcharodontosaurus</paper-item>
-    <paper-item>diplodocus</paper-item>
-  </paper-listbox>
-</paper-dropdown-menu> -->
+<div class="pull-left w100p border-s1">
+	<div class="pull-left w100p">
 
-<div class="pull-left w100p">
-	<select class="style-scope pull-left addnewprojectsd-card mt30"><option class="style-scope addnewprojectsd-card">AL</option><option class="style-scope addnewprojectsd-card">AK</option><option class="style-scope addnewprojectsd-card">GA</option><option class="style-scope addnewprojectsd-card">GA</option><option class="style-scope addnewprojectsd-card">ID</option></select>
-	<paper-button class="pull-left ml10 mt20"><iron-icon icon="plus"></iron-icon>Add</paper-button>
-	<paper-button class="pull-left ml10 mt20"><iron-icon icon="close"></iron-icon>Reset</paper-button>
-	<paper-input label="Price LIst Name:" class="pull-right ml10" id="aadd"></paper-input>
-	<iron-icon class="pull-right" icon="search"></iron-icon>
+<label class="pull-left mr10 mt25">Region:</label>
+<select class="style-scope aha-table mt20">
+	<option class="style-scope aha-table">Europe</option>
+	<option class="style-scope aha-table">North America</option>
+	<option class="style-scope aha-table">Latin America</option>
+	<option class="style-scope aha-table">Middle East</option>
+	<option class="style-scope aha-table">Asia</option>
+	<template is="dom-repeat" as="n" class="style-scope aha-table"></template>
+</select>
+	</div>
+
+	<iron-icon class="pull-right search-style-s3 mr10 cursor-pointer" icon="search" ng-click="filterPartTable(part)"></iron-icon>
+	
+	<paper-input-container class="pull-right ml10" id="aadd">
+  <label>Order no:</label>
+  <input is="iron-input" ng-model="part.order"></input>
+</paper-input-container>
+
+	<paper-input label="Product no:" class="pull-right ml10" id="aadd" ng-model="part.product"></paper-input>
+	<paper-input label="Customer no:" class="pull-right ml10" id="aadd" ng-model="part.customer"></paper-input>
+	<paper-input-container class="pull-right ml10" id="aadd">
+  <label>Price List Name:</label>
+  <input is="iron-input" ng-model="part.priceList"></input>
+</paper-input-container>
+	
 </div>
 
-<div class="pull-left w100p">
-	<px-data-table table-data="{{data}}"></px-data-table>
+<div class="pull-left w100p border-s2">
+<p ng-show="warn.norecords" class="ml10 fnt-red">No records found!</p>
+	<px-data-table table-data="{{data}}" filterable searchable selectable striped table-columns='true'>
+	<px-data-table-column name="Part Number1"></px-data-table-column>
+	<px-data-table-column name="Description1"></px-data-table-column>
+	<px-data-table-column name="Price List Name1"></px-data-table-column>
+	<px-data-table-column name="List Price1"></px-data-table-column>
+	<px-data-table-column name="Cost Source1"></px-data-table-column>
+	<px-data-table-column name="Cost1"></px-data-table-column>
+	</px-data-table>
 </div>
 
-<paper-button class="pull-right custom green ml10 mt20" raised>Save</paper-button>
-<paper-button class="pull-right ml10 mt20" raised>Cancel</paper-button>
 
 </px-card>
 

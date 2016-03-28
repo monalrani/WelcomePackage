@@ -39,8 +39,8 @@ define([
             name: 'Predix Seed',
             session: {},
             tabs: [
-                {icon: 'fa-tachometer', state: 'dashboards', label: 'Dashboards'}/*,
-                {icon: 'fa-file-o', state: 'home', label: 'Home Page'},
+                {icon: 'fa-tachometer', state: 'dashboards', label: 'Dashboards'},
+                {icon: 'fa-file-o', state: 'home', label: 'Price List'}/*,
                 {icon: 'fa-file-o', state: 'pxcharts', label: 'PX Charts', subitems: [
                     {state: 'bubbleChart', label: 'Buuble Chart'},
                     {state: 'sunburstChart', label: 'SunBurst Chart'},
